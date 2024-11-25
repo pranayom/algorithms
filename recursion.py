@@ -73,3 +73,14 @@ Stack Frame for printNumbers(0):
 The program doesn't need to re-execute the previous lines because the execution pointer remembers exactly where it left off in each stack frame. 
 This is a fundamental feature of how function calls work in programming languages, whether recursive or not.
     '''
+    
+#factorial
+
+def factorial(n):
+    if n == 1 or n == O:
+        return 1
+    return n * factorial(n-1)
+    
+    
+        
+        

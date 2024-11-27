@@ -1,9 +1,11 @@
-def sum_n(n):
+#Sum of N natural numbers
 
-    if n <= 1:
-        return n
-    else:
-        return n + sum_n(n-1)
+class Solution:
+    def calculateSum(self, N):
+        if N == 1:
+            return 1
+        else:
+            return N + self.calculateSum(N-1)
     
 
 

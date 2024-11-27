@@ -82,7 +82,28 @@ def factorial(n):
     if n == 1 or n == O:
         return 1
     return n * factorial(n-1)
+
+
+#GCD
+#Write recursive code to calculate the Greatest Common Divisor (GCD) of Two Positive Numbers.
+
+class Solution:
+    def calculateGCD(self, A, B):
+        if B ==0:
+            return A
+        return self.calculateGCD(B, A%B)
     
+#Converting Decimal to Binary
+
+class Solution:
+    def decimalToBinary(self, n):
+        if n == 0:
+            return 0
+        elif n ==1:
+            return 1
+        return self.decimaToBinary(n//2) + str(n%2)
+        
+
     
         
         
